@@ -44,7 +44,7 @@
       }).create();
 
       $('input[type=radio][value=upload_image]:checked').click();
-      <% if params[:page] && params[:wymeditor] %>
+      <% if params[:page] && params[:visual_editor] %>
       if(parent && parent.wym && typeof(parent.WYMeditor) !== 'undefined') {
         parent.WYMeditor.INIT_DIALOG(parent.wym);
       }
